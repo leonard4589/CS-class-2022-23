@@ -53,10 +53,21 @@
 #     f2 = fnew 
 
 # values of function f(x) = x^2 - 3x + 4
-for i in range(0,21):
-    y = i**2 - 3*i + 4
-    print(i, y)
+# for i in range(0,21):
+#     y = i**2 - 3*i + 4
+#     print(i, y)
+# # simpiler way
+# for x in range(21):
+#     print(x, x**2-3*x+4)
 
+#same thing added to an array
+y = []
+for x in range(21):
+    f = x**2 - 3*x + 4
+    print(x,f)
+    y.append(f)     # add to array
+
+print(y)
 
 
    
