@@ -39,17 +39,24 @@
 #first 30 numbers of the fibonacci sequence
 #fn = (fn -1) + (fn - 2) n>1
 
-n = 30     #number of members
+# n = 30     #number of members
 
-f1 = 1     #initialization
-f2 = 1
-print(f1)
-print(f2)
+# f1 = 1     #initialization
+# f2 = 1
+# print(f1)
+# print(f2)
 
-for i in range(2,n + 1):
-    fnew = f1 + f2   #calculate values
-    print(fnew)
-    f1 = f2    #update
-    f2 = fnew 
+# for i in range(2,n + 1):
+#     fnew = f1 + f2   #calculate values
+#     print(fnew)
+#     f1 = f2    #update
+#     f2 = fnew 
+
+# values of function f(x) = x^2 - 3x + 4
+for i in range(0,20):
+    y = i**2 - 3*i + 4
+    print(y)
+
+
 
    
