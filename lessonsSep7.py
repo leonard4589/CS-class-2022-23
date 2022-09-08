@@ -53,9 +53,9 @@
 #     f2 = fnew 
 
 # values of function f(x) = x^2 - 3x + 4
-for i in range(0,20):
+for i in range(0,21):
     y = i**2 - 3*i + 4
-    print(y)
+    print(i, y)
 
 
 
