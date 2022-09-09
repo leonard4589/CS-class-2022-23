@@ -17,10 +17,10 @@ costs = [10.00,
 5.60,
 7.50]
 # average:
-# total = 0
+total = 0
 
-# for i in costs:
-#     total = total + i
+for i in costs:
+    total = total + i
 # print("total =", total)
 # print("average =", total/17)
 
@@ -32,9 +32,17 @@ costs = [10.00,
 # print(maxVal)
 
 # min cost:
-minVal = 999
+# minVal = 999
+# for i in costs:
+#     if i < minVal:
+#         minVal = i
+# print(minVal)
+
+# standard diviation
+s = 0
 for i in costs:
-    if i < minVal:
-        minVal = i
-print(minVal)
+    f = ((i-(total/17))**2)
+    s = f + s
+    sd = (s/(len(costs)))**0.5
+print(sd)
 
