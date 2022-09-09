@@ -1,4 +1,4 @@
-# average
+# list;array:
 costs = [10.00,
 18.00,
 18.00,
@@ -16,11 +16,19 @@ costs = [10.00,
 6.50,
 5.60,
 7.50]
+# average:
+# total = 0
 
-total = 0
+# for i in costs:
+#     total = total + i
+# print("total =", total)
+# print("average =", total/17)
 
+# max cost:
+maxVal = -999
 for i in costs:
-    total = total + i
-print(total)
-print(total/17)
+    if i > maxVal:
+        maxVal = i
+print(maxVal)
+   
 
