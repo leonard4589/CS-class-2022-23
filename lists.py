@@ -25,10 +25,16 @@ costs = [10.00,
 # print("average =", total/17)
 
 # max cost:
-maxVal = -999
+# maxVal = -999
+# for i in costs:
+#     if i > maxVal:
+#         maxVal = i
+# print(maxVal)
+
+# min cost:
+minVal = 999
 for i in costs:
-    if i > maxVal:
-        maxVal = i
-print(maxVal)
-   
+    if i < minVal:
+        minVal = i
+print(minVal)
 
