@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 def fx(x):
     y = x**2/4
     return y 
