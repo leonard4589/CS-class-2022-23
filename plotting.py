@@ -6,3 +6,16 @@ def f(x):
     return y 
 
 print (f(-5))
+
+xa = []
+ya = []
+
+
+for i in np.arange(-5, 5):
+    xa.append(i)
+    ya.append(f(i))
+
+fgi, ax = plt.subplots()
+ax.plot(xa, ya)
+
+plt.show()
