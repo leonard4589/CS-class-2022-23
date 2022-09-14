@@ -1,5 +1,5 @@
 #f(x) = 2x^2 = x - 2
-from operator import truediv
+
 
 
 def q1(x):
