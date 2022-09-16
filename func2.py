@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt 
+#Write a function that is passed the x,y coordinates of two points and returns the slope of the line between them. (If the slope is undefined, it should return None).
+#Write a function that is passed the x,y coordinates of two points and returns the y-intercept of the straight line that connects the two points.
+#Write a function that graphs a straight line between [-10,10] if given the slope and the intercept of the line.
 
 
 def slope(x1, y1, x2, y2):
