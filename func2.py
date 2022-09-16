@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.plyplot as plt 
+import matplotlib.pyplot as plt 
 
 
 def slope(x1, y1, x2, y2):
@@ -22,21 +22,24 @@ def graph(x1, x2, y1, y2):
 
 x1 = 2
 y1 = 5
-x2 = 2
+x2 = 4
 y2 = 10
 
 x = []
 y = []
 
-for i in range(-10,10):
+m = slope(x1,y1,x2,y2)
+b = yintercept(x1,x2,y1,y2)
+
+for i in range(-10,11):
     x.append(i)
-    y.append(f(i))
+    y.append(m*i+b)
 
 print("Slope = ", slope(x1,y1,x2,y2))
 
 print("y-intercept = ", yintercept(x1,x2,y1,y2))
 
 fig, ax = plt.subplots()
-ax.plot(xa, ya)
+ax.plot(x, y)
 
 plt.show()
